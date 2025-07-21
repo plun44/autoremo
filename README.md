@@ -1,25 +1,48 @@
 # autoremo
-Bash script that allows you to remove all files with the same extension from a specified directory. Its pretty basic and im sure GitHub is full of them but im trying to document everything I'm learning.
 
-- Install
+**autoremo** is a simple Bash script that removes all files with a specific extension from a given directory.
 
-    	git clone 'https://github.com/plun44/autoremo'
+Yes, it's very basic — and GitHub is probably full of similar scripts — but I'm using this repo to document everything I'm learning as I go deeper into Bash and scripting.
 
-Or you can just paste the content of autoremo on a .sh file with nano or vim.
+---
 
-- Use
+# Installation
 
-1. Enter the directory
+Clone the repository:
 
-			cd autoremo
+	git clone https://github.com/plun44/autoremo
 
-2. Give the script execution permissions
+Or, if you prefer, just copy the contents of autoremo.sh into a .sh file using nano, vim, or your preferred editor.
 
-			chmod +x autoremo.sh
+ Usage
 
-3. Execute the script
+Navigate to the project folder:
 
-			./autoremo.sh
+	cd autoremo
 
+Give the script execution permissions:
 
+	chmod +x autoremo.sh
+
+Run the script:
+
+	./autoremo.sh
+
+## What it does
+
+- Asks for a directory path (e.g. ~/Desktop)
+
+- Asks for a file extension (e.g. txt, jpg)
+
+- Loops through the files in that directory
+
+- Deletes all matching files
+
+- Keeps everything else
+
+## Notes
+
+This is part of my personal learning journey with Bash scripting and Linux. Expect more small, focused tools in this repo and others.
+
+Feel free to suggest improvements or fork it if you want to tweak it!
 			
